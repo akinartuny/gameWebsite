@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
+    <title>404 Error Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="">
+</head>
+<body>
+    <h1 id="one" class="easterEgg">WHY DID YOU DO THIS?</h1>
+    <h1 id="two" class="easterEgg">!!!!!!!!!!THERE IS NO ESCAPE!!!!!!!!!!</h1>
+    <h1 id="three" class="easterEgg">IT'S YOUR CHOICE</h1>
+    <h1 id="four" class="easterEgg">NOW YOU CAN ENJOY THE DARKNESS</h1>
+    <h1 id="five" class="easterEgg">!BYE KID!</h1>
+
+
+    <h1 id="first" class="easterEgg">ARE YOU STILL WAITING?</h1>
+    <h1 id="second" class="easterEgg">THERE IS NOTHING HERE</h1>
+
+
+    <h1 id="third" class="easterEgg"> ALRIGHT KID!</h1>
+    <h1 id="fourth" class="easterEgg">HERE IS YOUR PRIZE!</h1>
+    
+
+<script src="script.js" defer></script>
+<script>
+   setTimeout(function(){
+    window.open("https://www.youtube.com/watch?v=xLGktQmtR5A", "_self");
+ }, 54000);
+ 
+ (function (global) {
+
+if(typeof (global) === "undefined") {
+    throw new Error("window is undefined");
+}
+
+var _hash = "!";
+var noBackPlease = function () {
+    global.location.href += "#";
+
+    // Making sure we have the fruit available for juice (^__^)
+    global.setTimeout(function () {
+        global.location.href += "!";
+    }, 50);
+};
+
+global.onhashchange = function () {
+    if (global.location.hash !== _hash) {
+        global.location.hash = _hash;
+    }
+};
+
+global.onload = function () {
+    noBackPlease();
+
+    // Disables backspace on page except on input fields and textarea..
+    document.body.onkeydown = function (e) {
+        var elm = e.target.nodeName.toLowerCase();
+        if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+            e.preventDefault();
+        }
+        // Stopping the event bubbling up the DOM tree...
+        e.stopPropagation();
+    };
+}
+})(window);
+</script>
+</body>
+</html>
